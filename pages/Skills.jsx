@@ -15,90 +15,48 @@ import wordpresslogo from "/public/wordpresslogo.png";
 
 const Experience = () => {
   const experience = [
-    {
-      id: 1,
-      title: "HTML",
-      src: html,
-    },
-    {
-      id: 2,
-      title: "CSS",
-      src: css,
-    },
-    {
-      id: 3,
-      title: "JavaScript",
-      src: javascript,
-    },
-    {
-      id: 4,
-      title: "React",
-      src: reactImage,
-    },
-    {
-      id: 5,
-      title: "Next JS",
-      src: nextjs,
-    },
-    {
-      id: 6,
-      title: "Tailwind",
-      src: tailwind,
-    },
-    {
-      id: 7,
-      title: "Node JS",
-      src: node,
-    },
-    {
-      id: 8,
-      title: "Unity (C#)",
-      src: unity,
-    },
-    {
-      id: 9,
-      title: "Kotlin",
-      src: kotlin,
-    },
-    {
-      id: 10,
-      title: "Springboot",
-      src: springboot,
-    },
-    {
-      id: 11,
-      title: "WordPress",
-      src: wordpresslogo,
-    },
-    {
-      id: 12,
-      title: "Shopify",
-      src: shopify,
-    },
+    { id: 1, title: "HTML", src: html },
+    { id: 2, title: "CSS", src: css },
+    { id: 3, title: "JavaScript", src: javascript },
+    { id: 4, title: "React", src: reactImage },
+    { id: 5, title: "Next JS", src: nextjs },
+    { id: 6, title: "Tailwind", src: tailwind },
+    { id: 7, title: "Node JS", src: node },
+    { id: 8, title: "Unity (C#)", src: unity },
+    { id: 9, title: "Kotlin", src: kotlin },
+    { id: 10, title: "Springboot", src: springboot },
+    { id: 11, title: "WordPress", src: wordpresslogo },
+    { id: 12, title: "Shopify", src: shopify },
   ];
 
   return (
-    <div id="experience" className="w-full">
-      <div className="max-w-screen-l text-center md:text-left py-16">
-        <h2 className="text-5xl md:text-6xl tracking-wider uppercase text-blue-500 font-bold">
+    <div id="experience" className="w-full px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-xl mx-auto text-center py-16">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl tracking-wide uppercase text-blue-500 font-bold">
           Skills
         </h2>
-        <p className="py-8 text-gray-800 dark:text-white">
-         These are the languages that I have used in past projects and have also been studying while working on current projects
+        <p className="py-6 text-sm sm:text-base text-gray-800 dark:text-white max-w-3xl mx-auto">
+          These are the languages that I have used in past projects and have also been studying while working on current projects
         </p>
-        <div className="max-w-5xl mx-auto grid md:grid-cols-6 gap-8"> 
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 mt-10">
           {experience.map(({ id, title, src }) => (
-            <div className="object-cover cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md">
-            <Image 
-              src={src}
-              alt={title}
-              className="rounded-6md duration-200
-              hover:scale-110 object-cover items-center mx-auto h-auto w-full sm:w-2/4"
-            />
-            <h2 className="text-center text-gray-800 dark:text-white text-base capitalize my-4 duration-200 group-hover:underline underline-offset-4">
-              {title}
-            </h2>
-          </div>
+            <div
+              key={id}
+              className="group shadow-md shadow-gray-600 rounded-md p-4 hover:scale-105 duration-200 bg-white dark:bg-gray-800"
+            >
+              <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 relative">
+                <Image
+                  src={src}
+                  alt={title}
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
+              <h2 className="text-sm sm:text-base font-medium text-gray-800 dark:text-white capitalize group-hover:underline underline-offset-4">
+                {title}
+              </h2>
+            </div>
           ))}
         </div>
       </div>
@@ -106,4 +64,4 @@ const Experience = () => {
   );
 };
 
-export default Experience
+export default Experience;

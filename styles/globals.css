@@ -7,6 +7,10 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 @layer base{
 body {
   padding: 0;
