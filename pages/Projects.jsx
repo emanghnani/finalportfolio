@@ -12,9 +12,9 @@ import shopify1 from "/public/shopify1.png";
 import shopify2 from "/public/shopify2.png";
 import shopify3 from "/public/shopify3.png";
 import trendvaultmain from "/public/trendvaultmain.jpg";
-import trendvault1 from "/public/trendvault1.png";
-import trendvault2 from "/public/trendvault2.png";
-import trendvault3 from "/public/trendvault3.png";
+import trendvault1 from "/public/trendvaulta.png";
+import trendvault2 from "/public/trendvaultb.png";
+import trendvault3 from "/public/trendvaultc.png";
 import shopee1 from "/public/shopee1.png";
 import hairlesswhisper2 from "/public/hairlesswhisper2.png";
 
